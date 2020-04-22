@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <!--The content below is only a placeholder and can be replaced.-->
-    
     <h2>Here we begin with the world of possibilities- </h2>
     <ul>
       <a routerLink="/viewdetails">Dashboard</a> |

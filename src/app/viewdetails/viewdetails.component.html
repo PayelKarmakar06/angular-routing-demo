@@ -1,3 +1,8 @@
 <p>
-  viewdetails works!
+  Here we have a list of Items to be covered from routing, clicking on whom will redirect you to that Details Page - 
 </p>
+<ul *ngFor="let item of itemList">
+  <li>
+    <a [routerLink]="['/viewdetails', item.id]">{{item.name}}</a>
+  </li>
+</ul>
