@@ -8,14 +8,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class LineItemDetailsComponent implements OnInit {
 
-  public topicId: any;
+  public topicDetails: any;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.topicId = this.route.snapshot.paramMap.get('id');
-    console.log(this.topicId);
-    //this.topicValue['data'] = this.route.snapshot.data.info;
+    this.topicDetails = this.route.snapshot.data.info;
   }
 
 }
